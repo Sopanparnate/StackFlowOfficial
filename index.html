@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#070b14" />
+  <title>StackFlow — Modern Web Solutions</title>
+  <meta name="description"
+    content="Stack Flow builds scalable, modern web applications for startups and businesses. Get a professional website that grows with you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── LOADER ──────────────────────────────────────────────────────────── -->
+  <div id="loader" role="status" aria-label="Loading Stack Flow">
+    <div class="loader-inner">
+      <div class="loader-logo">StackFlow - A Freelancing Website</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <span class="loader-text">Initializing StackFlow... </span>
+    </div>
+  </div>
+
+  <!-- ── FLOATING CONTACT ────────────────────────────────────────────────── -->
+  <div class="float-contacts" aria-label="Quick contact">
+    <a href="tel:+919067831928" class="float-btn call" aria-label="Call us">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/91906783928?text=Hi%20Stack%20Flow!%20I%27d%20like%20to%20discuss%20a%20project."
+      target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="WhatsApp us">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Stack Flow home">
+        <span class="logo-bracket">&lt;/&gt;</span><p>StackFlow</p>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#services" role="menuitem">Services</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#tech" role="menuitem">Tech</a></li>
+        <li role="none"><a href="#testimonials" role="menuitem">Reviews</a></li>
+        <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Hire Us</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+          <i class="fas fa-sun" id="themeIcon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+    <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <!-- Text side -->
+      <div class="hero-text">
+        <div class="hero-badge reveal" aria-label="Status: Open for projects">
+          <span class="badge-dot" aria-hidden="true"></span> Open for Projects
+        </div>
+
+        <h1 id="hero-title" class="hero-title reveal">
+          Building <span class="gradient-text">Scalable</span><br />
+          &amp; Modern Web<br />Solutions
+        </h1>
+
+        <p class="hero-desc reveal">
+          We help startups and businesses grow with powerful, beautiful web
+          applications.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-rocket" aria-hidden="true"></i> Get Started
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fas fa-eye" aria-hidden="true"></i> View Projects
+          </a>
+        </div>
+
+        <div class="hero-stats reveal" aria-label="Our achievements">
+          <div class="stat">
+            <span class="stat-num" data-target="12" aria-label="50 plus">0</span><span aria-hidden="true">+</span>
+            <small>Projects Done</small>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="6" aria-label="30 plus">0</span><span aria-hidden="true">+</span>
+            <small>Happy Clients</small>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="1" aria-label="3 plus">0</span><span aria-hidden="true">+</span>
+            <small>learning & working exp.</small>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+
+          <div class="stat">
+            <span class="stat-num" data-target="10">0</span><span>+</span>
+            <small>Technologies Used</small>
+          </div>
+        </div>
+      </div><!-- /hero-text -->
+
+      <!-- Visual side -->
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">stackflow.js</span>
+          </div>
+          <div class="code-body">
+            <span class="code-line"><span class="kw">const</span> <span class="var">project</span> <span
+                class="op">=</span> <span class="fn">build</span>({</span>
+            <span class="code-line pl"> <span class="key">design</span>: <span class="str">"stunning"</span>,</span>
+            <span class="code-line pl"> <span class="key">code</span>: <span class="str">"clean"</span>,</span>
+            <span class="code-line pl"> <span class="key">delivery</span>: <span class="str">"fast"</span>,</span>
+            <span class="code-line pl"> <span class="key">support</span>: <span class="str">"24/7"</span>,</span>
+            <span class="code-line">});</span>
+            <span class="code-line">&nbsp;</span>
+            <span class="code-line"><span class="kw">await</span> project.<span class="fn">launch</span>();</span>
+            <span class="code-line cmt">// ✅ Live in production</span>
+            <span class="cursor-blink">█</span>
+          </div>
+        </div>
+        <div class="floating-badge badge-react">⚛ React</div>
+        <div class="floating-badge badge-node">⬢ Node.js</div>
+        <div class="floating-badge badge-db">🗄 MongoDB</div>
+      </div>
+    </div><!-- /hero-content -->
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     ABOUT
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual card -->
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-card-main">
+            <div class="about-icon-ring"><i class="fas fa-code"></i></div>
+            <h3>Stack Flow</h3>
+            <p>Web Dev Studio</p>
+            <div class="about-tech-pills">
+              <span>React</span><span>Node.js</span><span>MySQL</span>
+            </div>
+          </div>
+          <div class="about-pill pill-1"><i class="fas fa-star"></i> Top Rated</div>
+          <div class="about-pill pill-2"><i class="fas fa-bolt"></i> Fast Delivery</div>
+          <div class="about-pill pill-3"><i class="fas fa-shield-alt"></i> Secure</div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal">
+          <div class="section-tag">About Us</div>
+          <h2 id="about-title" class="section-title">
+            We Turn Ideas Into<br /><span class="gradient-text">Digital Products</span>
+          </h2>
+          <p>Stack Flow is a web development startup built on a foundation of clean code, creative design, and a genuine
+            passion for solving real-world problems through technology.</p>
+          <p>We partner with startups, small businesses, and growing enterprises to deliver solutions that are
+            beautiful, blazing fast, secure, and built to scale.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Innovation-first approach — every
+                project is unique</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Scalable architecture designed from day
+                one</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Clean, documented, maintainable
+                code</span></div>
+            <div class="highlight-item"><i class="fas fa-check-circle"></i><span>Transparent communication
+                throughout</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Work With Us <i class="fas fa-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     SERVICES
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What We Do</div>
+        <h2 id="services-title" class="section-title">Services We <span class="gradient-text">Offer</span></h2>
+        <p class="section-sub">End-to-end web development services tailored to your business goals.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="card-popular">Most Popular</div>
+
+          <div class="service-icon-wrap"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+          <h3>Web Development</h3>
+          <p>Pixel-perfect, responsive websites that load fast and convert visitors into clients — from landing pages to
+            full portals.</p>
+          <ul class="service-list" aria-label="Technologies used">
+            <li><i class="fas fa-check" aria-hidden="true"></i> HTML / CSS / JavaScript</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> React / Next.js</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Mobile-first design</li>
+          </ul>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="service-card featured-card reveal">
+          <div class="card-popular">Most Popular</div>
+          <div class="service-icon-wrap"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+          <h3>Full Stack Applications</h3>
+          <p>Complete web apps with robust backends, secure APIs, and scalable databases — from MVP to enterprise scale.
+          </p>
+          <ul class="service-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Node.js + Express</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> REST API Design</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> MySQL / MongoDB</li>
+          </ul>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap"><i class="fas fa-palette" aria-hidden="true"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Intuitive, beautiful interfaces designed with users in mind — wireframes, prototypes, and pixel-perfect
+            delivery.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Figma Design</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> User flow mapping</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Responsive layouts</li>
+          </ul>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap"><i class="fas fa-tools" aria-hidden="true"></i></div>
+          <h3>Website Maintenance</h3>
+          <p>Keep your site fast, secure, and up-to-date with monthly maintenance plans tailored to your needs.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Security updates</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Performance audits</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 monitoring</li>
+          </ul>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     PROJECTS
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Work</div>
+        <h2 id="projects-title" class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">A selection of projects we're proud of — built with purpose and precision.</p>
+      </div>
+
+      <div class="projects-filter reveal" role="group" aria-label="Filter projects by type">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-img">
+            <img src="hotel.jpg" alt="hotel-image">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"
+                  aria-hidden="true"></i></a>
+              <a href="#" class="btn btn-sm btn-outline">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Hotel Booking System App</h3>
+            <p>Appointment booking for clinics with calendar integration and email reminders.</p>
+            <div class="project-tags"><span>React</span><span>PHP</span><span>MySQL</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="fullstack">
+          <div class="project-img">
+            <img src="school.jpg" alt="school-image">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"
+                  aria-hidden="true"></i></a>
+              <a href="#" class="btn btn-sm btn-outline">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>School Management Portal</h3>
+            <p>Student result portal with admin panel, PDF generation, and WhatsApp notifications.</p>
+            <div class="project-tags"><span>PHP</span><span>MySQL</span><span>JS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ecommerce">
+          <div class="project-img">
+            <img src="e-commerce.jpg" alt="e-commerce-image">
+
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"
+                  aria-hidden="true"></i></a>
+              <a href="#" class="btn btn-sm btn-outline">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-featured online store with Razorpay payments, cart, and admin dashboard.</p>
+            <div class="project-tags"><span>Next.js</span><span>PostgreSQL</span><span>Razorpay</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="frontend">
+          <div class="project-img">
+            <img src="site.jpg" alt="site-image">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"
+                  aria-hidden="true"></i></a>
+              <a href="#" class="btn btn-sm btn-outline">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Corporate Business Site</h3>
+            <p>Multi-page site with SEO optimization, contact forms, and Google Maps.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>SEO</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="ecommerce">
+          <div class="project-img">
+            <img src="restro.jpg" alt="resto-image">
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo <i class="fas fa-external-link-alt"
+                  aria-hidden="true"></i></a>
+              <a href="#" class="btn btn-sm btn-outline">Code <i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Restaurant Ordering App</h3>
+            <p>Online food ordering with real-time tracking and UPI payments.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>Socket.io</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     WHY US
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Why Stack Flow</div>
+        <h2 id="why-title" class="section-title">Why Clients <span class="gradient-text">Choose Us</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true"><i class="fas fa-bolt"></i></div>
+          <h3>Fast Delivery</h3>
+          <p>We deliver on time, every time. Our streamlined process ensures your project launches on schedule.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+          <h3>Clean Code</h3>
+          <p>Every line we write is readable, documented, and maintainable. Your codebase stays healthy long after
+            launch.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+          <h3>Affordable Pricing</h3>
+          <p>Startup-friendly pricing with transparent quotes. No hidden fees — just honest value for your investment.
+          </p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon" aria-hidden="true"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>We don't disappear after delivery. Our team is always available via WhatsApp, email, or call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     TECH STACK
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="tech" aria-labelledby="tech-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Arsenal</div>
+        <h2 id="tech-title" class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+        <p class="section-sub">The modern technologies we use to build reliable, performant products.</p>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#e34f26" aria-hidden="true"><i class="fab fa-html5"></i></div>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#1572b6" aria-hidden="true"><i class="fab fa-css3-alt"></i></div>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#f7df1e" aria-hidden="true"><i class="fab fa-js-square"></i></div>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#61dafb" aria-hidden="true"><i class="fab fa-react"></i></div>
+          <span>React</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#339933" aria-hidden="true"><i class="fab fa-node-js"></i></div>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#777bb4" aria-hidden="true"><i class="fab fa-php"></i></div>
+          <span>PHP</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#4479a1" aria-hidden="true"><i class="fas fa-database"></i></div>
+          <span>MySQL</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#47a248" aria-hidden="true"><i class="fas fa-leaf"></i></div>
+          <span>MongoDB</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#f05032" aria-hidden="true"><i class="fab fa-git-alt"></i></div>
+          <span>Git</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon" style="--clr:#2496ed" aria-hidden="true"><i class="fab fa-docker"></i></div>
+          <span>Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     TESTIMONIALS
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="testimonials" aria-labelledby="testi-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Client Love</div>
+        <h2 id="testi-title" class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">Stack Flow delivered our e-commerce platform in under 3 weeks. Quality exceeded
+            expectations. Sales went up 40% in the first month after launch.</p>
+          <footer class="testi-author">
+            <div class="author-avatar" style="background:#2563eb" aria-hidden="true">AK</div>
+            <div class="author-info">
+              <strong>Arjun Kapoor</strong>
+              <span>CEO, FreshMart India</span>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">We hired Stack Flow for our school portal and they built exactly what we needed —
+            results system, admin panel, WhatsApp notifications. Outstanding.</p>
+          <footer class="testi-author">
+            <div class="author-avatar" style="background:#059669" aria-hidden="true">PS</div>
+            <div class="author-info">
+              <strong>Priya Sharma</strong>
+              <span>Principal, Bright Future Academy</span>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testi-card reveal">
+          <div class="testi-quote" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <p class="testi-text">Professional, responsive, and genuinely cares about your project. Our SaaS dashboard is
+            clean and fast. Stack Flow is our go-to development partner.</p>
+          <footer class="testi-author">
+            <div class="author-avatar" style="background:#7c3aed" aria-hidden="true">RM</div>
+            <div class="author-info">
+              <strong>Rahul Mehta</strong>
+              <span>Founder, DataPulse SaaS</span>
+              <div class="testi-stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i
+                  class="fas fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     CONTACT
+     ══════════════════════════════════════════════════════════════════════ -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h2 id="contact-title" class="section-title">Let's Build Your <span class="gradient-text">Project</span></h2>
+        <p class="section-sub">Tell us about your idea — we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <h3>Contact Details</h3>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong><a href="mailto:stackflowwithsp@gmail.com">contact@stackflowofficial.dev</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+            <div><strong>Phone / WhatsApp</strong><a href="tel:+919067831928">+91 90678 31928</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong><span>Amravati, Maharashtra, India</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+            <div><strong>Response Time</strong><span>Within 24 hours</span></div>
+          </div>
+
+          <div class="contact-social" aria-label="Social media links">
+            <a href="https://github.com/Sopanparnate" class="social-btn" aria-label="GitHub"><i class="fab fa-github"
+                aria-hidden="true"></i></a>
+
+            <a href="https://wa.me/919067831928" target="_blank" rel="noopener" class="social-btn"
+              aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/_stack_flow?igsh=MXhqbHJocXN4eGxwdg==" class="social-btn"
+              aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="quick-cta">
+            <a href="https://wa.me/919067831928?text=Hi%20Stack%20Flow!%20I%20want%20to%20discuss%20a%20project."
+              target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+            </a>
+            <a href="tel:+919876543210" class="btn btn-call">
+              <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form reveal" id="contactForm">
+
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="hello@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select id="service" required>
+              <option value="">Select a service…</option>
+              <option>Web Development</option>
+              <option>Full Stack Application</option>
+              <option>UI/UX Design</option>
+              <option>Website Maintenance</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Budget Range</label>
+            <select id="budget" required>
+              <option value="">Select budget…</option>
+              <option>₹5,000 – ₹15,000</option>
+              <option>₹15,000 – ₹50,000</option>
+              <option>₹50,000 – ₹1,50,000</option>
+              <option>₹1,50,000+</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>Project Details</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send via WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Stack Flow home">
+            <span class="logo-bracket">&lt;</span>StackFlow<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Building scalable &amp; modern web solutions for startups and growing businesses.</p>
+          <div class="footer-social" aria-label="Social links">
+            <a href="https://github.com/Sopanparnate" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://wa.me/919067831928" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/_stack_flow?igsh=MXhqbHJocXN4eGxwdg==" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right" aria-hidden="true"></i> About</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> Services</a></li>
+            <li><a href="#projects"><i class="fas fa-chevron-right" aria-hidden="true"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-links" aria-label="Services links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> Web Development</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> Full Stack Apps</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> UI/UX Design</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right" aria-hidden="true"></i> Maintenance</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> +91 90678 31928 / +91 84688 03638</p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Amravati, Maharashtra</p>
+          <div class="footer-cta-btns">
+            <a href="https://wa.me/919067831928" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+            </a>
+            <a href="tel:+91 84688 03638" class="btn btn-sm btn-call">
+              <i class="fas fa-phone" aria-hidden="true"></i> Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Stack Flow. All rights reserved. Built with <i class="fas fa-heart"
+            aria-hidden="true"></i> in India.</p>
+        <p>Designed &amp; developed by <strong>Stack Flow</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
